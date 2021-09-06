@@ -164,6 +164,7 @@ To connect to pgAdmin 4:
 Lets write some queries now.
 
 1. Click on view-db → Databases → postgres → right-click on postgres → Query Tool
+![views4.png](images/views4.png)
 
 2. This is query we want to test:
 
