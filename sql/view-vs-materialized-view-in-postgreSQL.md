@@ -169,7 +169,7 @@ Lets write some queries now.
 2. This is query we want to test:
 
 ```sql
-SELECT class.id as c_id, student.id as s_id, course.id as cr_id
+SELECT class.id AS c_id, student.id AS s_id, course.id AS cr_id
 FROM class, course, student, enrollment
 WHERE
     class.course_id = course.id
@@ -181,7 +181,7 @@ WHERE
 
 ```sql
 CREATE VIEW my_view AS
-    SELECT class.id as c_id, student.id as s_id, course.id as cr_id
+    SELECT class.id AS c_id, student.id AS s_id, course.id AS cr_id
     FROM class, course, student, enrollment
     WHERE
         class.course_id = course.id
@@ -190,7 +190,7 @@ CREATE VIEW my_view AS
  
  
 CREATE MATERIALIZED VIEW my_materialized_view AS
-    SELECT class.id as c_id, student.id as s_id, course.id as cr_id
+    SELECT class.id AS c_id, student.id AS s_id, course.id AS cr_id
     FROM class, course, student, enrollment
     WHERE
         class.course_id = course.id
@@ -201,7 +201,7 @@ CREATE MATERIALIZED VIEW my_materialized_view AS
 4. Now we need to test using these queries
 
 ```sql
-SELECT class.id as c_id, student.id as s_id, course.id as cr_id
+SELECT class.id AS c_id, student.id AS s_id, course.id AS cr_id
 FROM class, course, student, enrollment
 WHERE
     class.course_id = course.id
